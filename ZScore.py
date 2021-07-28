@@ -26,7 +26,7 @@ def ZScore():
     '''
     >>> Descarga datos de tickers en lista
     '''
-    with open("D:\\xDocumentos\Python Trading\Robot\Data\sp500.txt", "rb") as fp:   # Unpickling
+    with open("sp500.txt", "rb") as fp:   # Unpickling
         lista = pickle.load(fp)
 
     data = download(tickers=lista, period='3mo', interval = '1d', threads= True, group_by='Tickers')
