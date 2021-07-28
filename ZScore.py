@@ -2,7 +2,6 @@ from yfinance import download
 import ta
 import pandas as pd
 import pickle
-import dataframe_image as dfi
 
 
 
